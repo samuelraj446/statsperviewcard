@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+body{
+    font-family: 'Outfit', sans-serif;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.color {
+    color: hsl(233, 47%, 7%);
+    color:  hsl(244, 38%, 16%);
+    color: hsl(277, 64%, 61%);
+    color: hsl(0, 0%, 100%);
+    color: hsla(0, 0%, 100%, 0.75);
+    color: hsla(0, 0%, 100%, 0.6)
+    ;
+    
+}
+
+main {
+    background-color: hsl(233, 47%, 7%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.card-container {
+    height: 70vh;
+    width: 80vw;
+    background-color: hsl(244, 38%, 16%);
+    display: flex;
+    align-self: center;
+    
+    flex-direction: row-reverse;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    margin: 12vh;
+
+}
+
+.img {
+    filter:opacity(0.5) drop-shadow(0 0 0  #7d1aba);
+    height: 70vh;
+    width: 40vw;
+
+}
+
+.highlights{
+    display:flex ;
+    justify-content: space-around;
+}
+
+.highlights h2 {
+    color: hsl(0, 0%, 100%);
+}
+
+.highlights p {
+    text-transform: uppercase;
+    font-size: 10px;
+
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 5vh;
+    width: 60vh;
+    /* word-spacing: 3px; */
+    letter-spacing: 1px;
+    font-size: 34.5px;
+}
+.para{
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 15vh;
+    font-size: 15px;
+    letter-spacing: 1px;
+    width: 59vh;
+    line-height: 27px;
+}
+span{
+    color: hsl(277, 64%, 61%);
+}
+footer{
+    background-color:hsl(233, 19%, 81%);
+    text-align: center;
+}
+
+@media  screen and (max-width:768px) {
+    main{
+        height: 100%;
+    }
+   .card-container{
+    flex-direction: column;
+    height: 80vh;
+    width: 82vw;
+    
+   }
+   .img-container {
+
+   }
+   .text-container{
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    margin-top: -3px;
+
+   }
+   .img{
+    width: 82vw;
+    height: 24vh;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+
+   }
+   h1{
+    width: 51vw;
+    word-spacing: inherit;
+    letter-spacing: inherit;
+    font-size: 24px;
+    margin-top: 14px;
+
+   }
+   .para{
+    width: fit-content;
+    font-size: 12px;
+    letter-spacing: normal;
+    line-height: normal;
+    margin-bottom: 5px;
+
+   }
+   .highlights{
+    flex-direction: column;
+   }
+   .compines{
+    margin: 8px;
+
+   }
+   .template{
+    margin: 6px;
+
+   }
+   .quires{
+    margin: 6px;
+
+   }
+   footer{
+    display: none;
+   }
+    
+}
